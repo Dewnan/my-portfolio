@@ -11,14 +11,15 @@
     <title>My Profile</title>
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="header">
        <div class="container">
         <nav>
             <img src="img/logo.png" alt="logo" class="logo">
             <ul id="sideMenue">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">My Work</a></li>
+                <li><a href="#contact">Contact Me</a></li>
                 <i class="fa-solid fa-xmark" onclick="closeMenue()"></i>
             </ul>
             <i class="fa-solid fa-bars" onclick="openMenue()"></i>
@@ -32,7 +33,7 @@
         
     </div>
 
-    <div class="about">
+    <div class="about" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-1">
@@ -74,7 +75,7 @@
         </div>
     </div>
 
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
@@ -107,7 +108,7 @@
         </div>
     </div>
     
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
