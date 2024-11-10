@@ -321,9 +321,12 @@ form input, form textarea {
 #heart {
     color: red;
 }
+#response {
+    transition: opacity 0.5s ease;
+}
 
 .success {
-    display: inline-block;
+    display: block;
     width: fit-content;
     padding: 14px 10px;
     margin-top: -20px;
@@ -332,8 +335,17 @@ form input, form textarea {
     color: white;
     font-size: 15px;
 }
+
+.success, .error {
+    opacity: 1;
+}
+
+.success.fade-out, .error.fade-out {
+    opacity: 0;
+}
+
 .error {
-    display: inline-block;
+    display: block;
     width: fit-content;
     padding: 14px 10px;
     margin-top: -20px;
