@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #000814;
+    background-color: #000814;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
 }
@@ -132,4 +132,15 @@ nav ul li a:hover::after {
 
 .tab-links.active-link::after {
     width: 75%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #ffc400;
+    font-size: 14px;
+
 }
