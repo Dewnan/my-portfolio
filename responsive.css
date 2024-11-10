@@ -1,0 +1,71 @@
+/*---Responsive---*/
+
+nav .fa-solid {
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .Htext {
+        margin-top: 100px;
+        font-size: 16px;
+    }
+
+    .Htext h1 {
+        font-size: 30px;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 20px;
+    }
+
+    nav ul {
+        background: #cf302a;
+        position: fixed;
+        top: -16px;
+        right: -215px;
+        width: 175px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .sub-title {
+        font-size: 30px;
+    }
+
+    .col-1, .col-2 {
+        flex-basis: 100%;
+    }
+
+    .col-2 {
+        font-size: 14px;
+    }
+
+    .tab-links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+    
+    .copyright {
+        font-size: 14px;
+    }
+    
+}
