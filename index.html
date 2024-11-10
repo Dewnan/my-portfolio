@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <title>My Profile</title>
 </head>
@@ -22,7 +23,7 @@
        </div>
 
        <div class="Htext">
-            <p>Software Engineer</p>
+            <p>Software Engineering Student</p>
             <h1>Hi, I'm <span>Dewnan Chamithka</span><br> From Sri lanka </h1>
         </div>
         
@@ -41,11 +42,11 @@
                         My goal is to develop a strong foundation in backend technologies and 
                         software engineering to excel in the tech industry.</p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('exp')">Experience</p>
+                        <p class="tab-links"onclick="openTab('edu')">Education</p>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>Python</span><br>Manipulate and Visualize data</li>
                             <li><span>React</span><br>Design Web/App Interface</li>
@@ -53,20 +54,52 @@
                             <li><span>MongoDB</span><br>Store and Manage Data</li>
                         </ul>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="exp">
                         <ul>
-                            <li><span>Inventory Management</span><br>Web app shop that let owner to 
+                            <li><span>Web App and Database</span><br>Web app shop that let owner to 
                                 look at inventory and Add, Remove, Delete or Update Items.</li>
                         </ul>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="edu">
                         <ul>
-                            <li><span>abcd</span><br>afs</li>
-                            <li><span>hgfg</span><br>afs</li>
-                            <li><span>tytu</span><br>afs</li>
+                            <li><span>BSc (Hons) in Software Engineering</span><br>Following Bachelor of Science Hons. 
+                                A degree in Software Engineering in SLTC Research University.</li>
                         </ul>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/work-1.png" alt="work-1">
+                    <div class="layer">
+                        <h3>Discord Bot</h3>
+                        <p>Discord Bot allows users to play Music from Youtube Usign URL in Voice Channels.</p>
+                        <a href="https://github.com/Dewnan/Discord-Music-Bot" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work-2.png" alt="work-2">
+                    <div class="layer">
+                        <h3>Youtube to MP3</h3>
+                        <p>Youtube Playlist Downloader as MP3.</p>
+                        <a href="https://github.com/Dewnan/YouTube-Playlist-as-mp3-Downloader" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work-3.png" alt="work-3">
+                    <div class="layer">
+                        <h3>API & Database.</h3>
+                        <p>NodeJS Programme to Handle API Requests and manage MongoDB Database.</p>
+                        <a href="https://github.com/Dewnan/React-MongoDB-Learn" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>

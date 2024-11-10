@@ -57,6 +57,7 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
+/*----Headder----*/
 .Htext {
     margin-top: 15%;
     margin-left: 20px;
@@ -71,6 +72,8 @@ nav ul li a:hover::after {
 .Htext h1 span {
     color: #cf302a;
 }
+
+/*----About Me----*/
 
 .about {
     padding: 80px 0;
@@ -142,5 +145,91 @@ nav ul li a:hover::after {
 .tab-contents ul li span {
     color: #ffc400;
     font-size: 14px;
+}
 
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/*----portfolio----*/
+
+.portfolio {
+    padding: 50px 0;
+}
+
+.work-list {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     grid-gap: 40px;
+     margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work:hover img {
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.layer {
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,.3), #cf302a);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.4s;
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.layer a {
+    margin-top: 10px;
+    color: #cf302a;
+    font-size: 20px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.layer a:hover {
+    color: #ffc400;
+    background: #fff;
+    transition: 0.5s;
+}
+
+.layer a i {
+    margin-top: 20px;
 }
