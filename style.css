@@ -84,15 +84,10 @@ nav ul li a:hover::after {
 .header-content {
     margin-top: 4%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
     width: 100%;
 }
-
-.github-status {
-    margin-left: 100px;
-    margin-right: 100px;
-  }
 
 .github-status img {
     max-width: 100%;
