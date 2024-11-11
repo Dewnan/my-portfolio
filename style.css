@@ -65,20 +65,24 @@ nav ul li a:hover::after {
 .Htext {
     margin-top: 4%;
     margin-left: 20px;
-    font-size: 30px;
 }
 
 .Htext h1 {
     font-size: 60px;
-    margin-top: 20px;
 }
 
 .Htext h1 span {
     color: #cf302a;
 }
 
+.Htext p {
+    margin-top: -35px;
+    font-size: 14px;
+}
+
 /*---- github status ----*/
 .header-content {
+    margin-top: 4%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -86,8 +90,8 @@ nav ul li a:hover::after {
 }
 
 .github-status {
-    margin-top: 22%;
-    margin-right: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
 
 .github-status img {
